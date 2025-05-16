@@ -20,3 +20,6 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 // backend/app.js (add below existing lines)
 const studentRoutes = require('./routes/studentRoutes');
 app.use('/api/students', studentRoutes);
+
+const attendanceRoutes = require('./routes/attendanceRoutes');
+app.use('/api/attendance', attendanceRoutes);
